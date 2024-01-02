@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Etch-A-Sketch</h1>
+        <div class="button-container">
+            <button id="grid-16" onclick="generateGrid(16,16)">16x16</button>
+            <button id="grid-32" onclick="generateGrid(32,32)">32x32</button>
+            <button id="grid-64" onclick="generateGrid(64,64)">64x64</button>
+            <button onclick="clearGrid()">Clear</button>
+        </div>
+        <div id="grid-container"></div>
+        <div class="button-container">
+            <button id="pen-black" onclick="changePenType('black')">Black</button>
+            <button id="pen-white" onclick="changePenType('white')">White</button>
+            <button id="pen-rainbow" onclick="changePenType('rainbow')">Rainbow</button>
+        </div>
+    </div>
+</body>
+</html>
